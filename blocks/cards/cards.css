@@ -124,3 +124,26 @@ main .section.cards-container .cards .cards-card-body .button.secondary::after {
   height: 16px;
   background-image: url('/icons/arrow-right-blue.svg');
 }
+
+@media (max-width: 1023px) {
+  main .section.cards-container .cards>ul {
+    display: block;
+  }
+
+  main .section.cards-container {
+    margin-top: 48px;
+  }
+
+  main .section.cards-container .default-content-wrapper {
+    display: block;
+  }
+
+  main .section.cards-container .default-content-wrapper p {
+    width: auto;
+  }
+
+  main .section.cards-container .default-content-wrapper h2 {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
