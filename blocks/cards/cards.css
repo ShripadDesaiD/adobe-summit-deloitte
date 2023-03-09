@@ -29,3 +29,97 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+main .section.cards-container {
+  margin-top: 96px;
+}
+
+main .section.cards-container .cards>ul {
+  gap: 24px;
+}
+
+main .section.cards-container .cards>ul>li {
+  border: none;
+}
+
+main .section.cards-container .default-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+main .section.cards-container .default-content-wrapper h2 {
+  color: #0c1e46;
+  width: 486px;
+  margin: 0;
+}
+
+main .section.cards-container .default-content-wrapper h2 strong {
+  color: #7526e3;
+}
+
+main .section.cards-container .default-content-wrapper p {
+  width: 482px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2b2826;
+}
+
+main .section.cards-container .default-content-wrapper p:first-child {
+  width: 100%;
+  margin-bottom: 48px;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0c1e46;
+}
+
+main .section.cards-container .cards .cards-card-body {
+  margin: 36px 0;
+}
+
+main .section.cards-container .cards>ul>li img {
+  aspect-ratio: 64 / 77;
+}
+
+main .section.cards-container .cards .cards-card-body p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-tint-color);
+}
+
+main .section.cards-container .cards .cards-card-body .button.secondary {
+  margin: 24px 0;
+  padding: 0;
+  color: var(--secondary-link-color);
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: unset;
+  display: flex;
+  align-items: center;
+}
+
+main .section.cards-container .cards .cards-card-body .button.secondary::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url('/icons/arrow-right-blue.svg');
+}
