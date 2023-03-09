@@ -36,6 +36,7 @@ main .section.cards-container {
 
 main .section.cards-container .cards>ul {
   gap: 24px;
+  display: flex;
 }
 
 main .section.cards-container .cards>ul>li {
@@ -51,7 +52,7 @@ main .section.cards-container .default-content-wrapper {
 
 main .section.cards-container .default-content-wrapper h2 {
   color: #0c1e46;
-  width: 486px;
+  width: 40.5%;
   margin: 0;
 }
 
@@ -60,7 +61,7 @@ main .section.cards-container .default-content-wrapper h2 strong {
 }
 
 main .section.cards-container .default-content-wrapper p {
-  width: 482px;
+  width: 40.16%;
   margin: 0;
   font-size: 24px;
   font-weight: 600;
