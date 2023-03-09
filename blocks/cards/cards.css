@@ -36,6 +36,7 @@ main .section.cards-container {
 
 main .section.cards-container .cards>ul {
   gap: 24px;
+  display: flex;
 }
 
 main .section.cards-container .cards>ul>li {
@@ -51,7 +52,7 @@ main .section.cards-container .default-content-wrapper {
 
 main .section.cards-container .default-content-wrapper h2 {
   color: #0c1e46;
-  width: 486px;
+  width: 40.5%;
   margin: 0;
 }
 
@@ -60,7 +61,7 @@ main .section.cards-container .default-content-wrapper h2 strong {
 }
 
 main .section.cards-container .default-content-wrapper p {
-  width: 482px;
+  width: 40.16%;
   margin: 0;
   font-size: 24px;
   font-weight: 600;
@@ -122,4 +123,27 @@ main .section.cards-container .cards .cards-card-body .button.secondary::after {
   width: 16px;
   height: 16px;
   background-image: url('/icons/arrow-right-blue.svg');
+}
+
+@media (max-width: 1023px) {
+  main .section.cards-container .cards>ul {
+    display: block;
+  }
+
+  main .section.cards-container {
+    margin-top: 48px;
+  }
+
+  main .section.cards-container .default-content-wrapper {
+    display: block;
+  }
+
+  main .section.cards-container .default-content-wrapper p {
+    width: auto;
+  }
+
+  main .section.cards-container .default-content-wrapper h2 {
+    width: auto;
+    margin-bottom: 20px;
+  }
 }
