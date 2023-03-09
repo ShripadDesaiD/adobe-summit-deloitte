@@ -37,3 +37,24 @@ main .hero img {
   width: 100%;
   height: 100%;
 }
+
+main .hero-container .hero-wrapper {
+  max-width: 1200px;
+}
+
+main .hero-container .hero-wrapper .hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 84px;
+  overflow: hidden;
+}
+  
+main .hero-container .hero-wrapper .hero {
+  padding: 220px 0;
+}
+
+
+main .hero-container .hero-wrapper  .hero h1 {
+  margin: 0 154px 22px;
+}
