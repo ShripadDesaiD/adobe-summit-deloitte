@@ -38,10 +38,6 @@ main .hero img {
   height: 100%;
 }
 
-main .hero-container .hero-wrapper {
-  max-width: 1200px;
-}
-
 main .hero-container .hero-wrapper .hero img {
   object-fit: cover;
   width: 100%;
@@ -52,9 +48,55 @@ main .hero-container .hero-wrapper .hero img {
   
 main .hero-container .hero-wrapper .hero {
   padding: 220px 0;
+  min-height: unset;
 }
 
+main .hero-container .hero-wrapper .hero p {
+  margin: 0;
+}
 
-main .hero-container .hero-wrapper  .hero h1 {
+main .hero-container .hero-wrapper .hero h1 {
   margin: 0 154px 22px;
+  max-width: unset;
+}
+
+main .hero-container .hero-wrapper .hero h1 br {
+  height: 0;
+}
+
+main .hero-container .hero-wrapper .hero a {
+  margin: 0 154px;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1589ee;
+}
+
+@media (max-width: 1023px) {
+  main .hero-container .hero-wrapper .hero h1 {
+    margin: 0 40px 22px;
+  }
+
+  main .hero-container .hero-wrapper .hero a {
+    margin: 0 40px;
+  }
+}
+
+/* version 2 starts here */
+main .hero-container.hero-container-2 .hero-wrapper .hero h1 {
+  margin: 0 98px;
+  position: relative;
+  max-width: 1003px;
+}
+
+main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
+  right: 0;
+  position: absolute;
+}
+
+main .hero-container.hero-container-2 .hero-wrapper .hero {
+  padding: 268px 0;
 }
