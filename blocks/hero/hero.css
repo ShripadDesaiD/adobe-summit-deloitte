@@ -104,13 +104,13 @@ main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
   }
 }
 
-@media (max-width: 1299px) {
+@media (max-width: 1199px) {
   main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
     margin-left: 0;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
     margin-left: 27%;
   }
