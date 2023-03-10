@@ -88,15 +88,36 @@ main .hero-container .hero-wrapper .hero a {
 /* version 2 starts here */
 main .hero-container.hero-container-2 .hero-wrapper .hero h1 {
   margin: 0 98px;
-  position: relative;
-  max-width: 1003px;
-}
-
-main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
-  right: 0;
-  position: absolute;
 }
 
 main .hero-container.hero-container-2 .hero-wrapper .hero {
   padding: 268px 0;
+}
+
+main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
+  display: block;
+}
+
+@media (max-width: 1023px) {
+  main .hero-container.hero-container-2 .hero-wrapper .hero h1 {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 1299px) {
+  main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
+    margin-left: 27%;
+  }
+}
+
+@media (min-width: 1440px) {
+  main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
+    margin-left: 389px;
+  }
 }
