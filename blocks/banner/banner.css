@@ -1,3 +1,56 @@
 main .section.banner-container {
-    display: block;
+    margin: 96px 0;
+    padding: 96px;
+    background-color: #3a49da;
+    border-top-left-radius: 84px;
+    color: var(--background-color);
+}
+
+main .section.banner-container .banner-wrapper .banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .section.banner-container .banner-wrapper .banner h3 {
+    margin: 0 0 20px;
+}
+
+main .section.banner-container .banner-wrapper .banner p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+}
+
+main .section.banner-container .banner-wrapper .banner .button-container a {
+    margin: 0 0 0 80px;
+    padding: 14px 25px;
+    border-radius: 2px;
+    border: solid 1px #fff;
+    background: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 1.43;
+}
+
+@media (max-width: 1023px) {
+    main .section.banner-container {
+        margin: 48px 0;
+        padding: 48px;
+    }
+
+    main .section.banner-container .banner-wrapper .banner {
+        display: block;
+    }
+
+    main .section.banner-container .banner-wrapper .banner p {
+        margin-bottom: 20px;
+    }
+
+    main .section.banner-container .banner-wrapper .banner .button-container a {
+        margin: 0;
+    }
 }
