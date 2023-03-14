@@ -261,6 +261,7 @@ main img {
 
 main {
   padding: 0 40px;
+  word-wrap: break-word;
 }
 
 @media (min-width: 1024px) {

@@ -47,8 +47,12 @@ main .hero-container .hero-wrapper .hero img {
 }
   
 main .hero-container .hero-wrapper .hero {
-  padding: 220px 0;
+  padding: 220px 0 266px;
   min-height: unset;
+}
+
+main .hero-container .hero-wrapper .hero div div {
+  margin-bottom: 48px;
 }
 
 main .hero-container .hero-wrapper .hero p {
@@ -98,9 +102,294 @@ main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
   display: block;
 }
 
+/* env-social-gov-container variation */
+main .section.env-social-gov-container.hero-container {
+  margin-top: 96px;
+}
+
+main .section.env-social-gov-container.hero-container .default-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+main .section.env-social-gov-container.hero-container .default-content-wrapper h2 {
+  color: #0c1e46;
+  width: 40.5%;
+  margin: 0;
+}
+
+main .section.env-social-gov-container.hero-container .default-content-wrapper h2 strong {
+  color: #04844b;
+}
+
+main .section.env-social-gov-container.hero-container .default-content-wrapper p {
+  width: 40.16%;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #393939;
+}
+
+main .section.env-social-gov-container.hero-container .default-content-wrapper p:first-child {
+  width: 100%;
+  margin-bottom: 48px;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #071d49;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero {
+  padding: 102px 0 132px;
+}
+
+main .section.hero-container-overlap-block.columns-container .columns-wrapper .columns.columns-2-cols>div {
+  gap: 24px;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1) {
+  display: flex;
+  padding: 0 60px;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div {
+  background-color: #f2f2f2;
+  margin: 0 12px;
+  padding: 24px 24px 56px;
+  width: 23.5%;
+  word-wrap: break-word;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div p {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #706e6b;
+}
+
+main .section.hero-container-overlap-block.columns-container .columns-wrapper .columns.columns-2-cols>div div p:first-child {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #071d49;
+  padding: 0 0 19.5px;
+  border-bottom: 0.5px solid #04844b;
+  margin: 0 0 20px;
+}
+
+main .section.hero-container-overlap-block.columns-container .columns-wrapper .columns.columns-2-cols>div>div p:nth-child(3) {
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #514f4d;
+  margin: 8px 0 24px;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div p:first-child {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #071d49;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div h1 {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 0 0 12px;
+  color: #393939;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div h3 {
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #393939;
+  margin: 0 0 12px;
+  flex: 1;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div ul {
+  padding-left: 24px;
+  list-style-type: none;
+  margin: 0;
+  flex: 1;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div ul li {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid green;
+  padding-bottom: 7.5px;
+  padding-top: 24px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #393939;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div ul li:first-child {
+  padding-top: 0;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div ul li u {
+  text-decoration: none;
+  flex: 1;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div ul li::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  background-image: url('/icons/external-link.svg');
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div:first-child {
+  margin-left: 0;
+}
+
+main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div:last-child {
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 39%;
+}
+
+main .section.hero-container-overlap-block.columns-container {
+  margin: -266px 78px 0 102px;
+  background-color: white;
+  border-top-left-radius: 84px;
+  padding: 60px;
+  min-height: 266px;
+}
+
+main .section.hero-container-overlap-block.columns-container .columns-wrapper .columns.columns-2-cols>div>div:first-child p:nth-child(2),
+main .section.hero-container-overlap-block.columns-container .columns-wrapper .columns.columns-2-cols>div>div:nth-child(2) p:nth-child(4) {
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2b2826;
+  margin: 0;
+}
+
+main .section.hero-container-overlap-block.columns-container .columns-wrapper .columns.columns-2-cols>div>div:nth-child(2) p:nth-child(2) {
+  margin: 0;
+}
+
+main .section.hero-container-overlap-block.columns-container .columns-wrapper .columns.columns-2-cols>div>div:nth-child(2) p:last-child {
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1589ee;
+  margin: 20px 0 4px;
+}
+
+main .section.hero-container-overlap-block.columns-container .columns-wrapper .columns.columns-2-cols>div>div:nth-child(2) p:last-child strong {
+  font-weight: 300;
+  color: #514f4d;
+}
+
 @media (max-width: 1023px) {
+  main .section.hero-container-overlap-block.columns-container .columns-wrapper .columns.columns-2-cols>div {
+    display: block;
+  }
+
+  main .section.hero-container-overlap-block.columns-container {
+    margin: -266px 40px 0;
+    padding: 40px;
+  }
+
   main .hero-container.hero-container-2 .hero-wrapper .hero h1 {
     margin: 0 40px;
+  }
+
+  /* env-social-gov-container variation */
+  main .section.env-social-gov-container.hero-container {
+    margin-top: 48px;
+  }
+
+  main .section.env-social-gov-container.hero-container .default-content-wrapper {
+    display: block;
+  }
+
+  main .section.env-social-gov-container.hero-container .default-content-wrapper p {
+    width: auto;
+  }
+
+  main .section.env-social-gov-container.hero-container .default-content-wrapper h2 {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  main .section.env-social-gov-container.hero-container .hero-wrapper .hero {
+    padding: 80px 0;
+  }
+
+  main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1) {
+    display: block;
+    padding: 0 48px;
+  }
+
+  main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1) div {
+    width: auto;
+    margin: 0 0 20px;
+  }
+
+  main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div:first-child {
+    width: auto;
+  }
+
+  main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div:last-child {
+    display: block;
+    width: auto;
+  }
+
+  main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nth-last-child(1)>div ul {
+    padding-left: 0;
   }
 }
 
