@@ -41,6 +41,7 @@ main .section.cards-container .cards>ul {
 
 main .section.cards-container .cards>ul>li {
   border: none;
+  width: 33.33%;
 }
 
 main .section.cards-container .default-content-wrapper {
@@ -128,6 +129,10 @@ main .section.cards-container .cards .cards-card-body .button.secondary::after {
 @media (max-width: 1023px) {
   main .section.cards-container .cards>ul {
     display: block;
+  }
+
+  main .section.cards-container .cards>ul>li {
+    width: auto;
   }
 
   main .section.cards-container {
