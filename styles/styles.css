@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
- :root {
+:root {
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
@@ -291,4 +291,47 @@ main .section[data-section-status='initialized'] {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+/* article body section */
+
+main .section.article-body p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-tint-color);
+}
+
+main .section.article-body a {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--secondary-link-color);
+}
+
+main .section.article-body h1,
+main .section.article-body h2,
+main .section.article-body h3,
+main .section.article-body h4,
+main .section.article-body h5,
+main .section.article-body h6 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #2b2826;
+}
+
+main .section.article-body img {
+  width: 100%;
+  object-fit: cover;
+  margin: 20px 0;
 }

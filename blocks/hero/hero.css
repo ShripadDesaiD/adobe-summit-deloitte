@@ -1,13 +1,13 @@
 /* block specific CSS goes here */
 
-main .hero-container > div {
+main .hero-container>div {
   max-width: unset;
 }
-  
+
 main .hero-container {
   padding: 0;
 }
-  
+
 main .hero {
   position: relative;
   padding: 32px;
@@ -45,7 +45,7 @@ main .hero-container .hero-wrapper .hero img {
   border-top-left-radius: 84px;
   overflow: hidden;
 }
-  
+
 main .hero-container .hero-wrapper .hero {
   padding: 220px 0 266px;
   min-height: unset;
@@ -102,6 +102,57 @@ main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
   display: block;
 }
 
+main .section.env-social-gov-container.hero-container .default-content-wrapper h2 strong {
+  color: #04844b;
+}
+
+main .section.hero-container-overlap-block>.default-content-wrapper p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-tint-color);
+}
+
+main .section.hero-container-overlap-block>.default-content-wrapper a {
+  color: var(--secondary-link-color);
+}
+
+
+main .section.hero-container-overlap-block>.default-content-wrapper p:first-child {
+  margin-top: 0;
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 20px;
+}
+
+main .section.hero-container-overlap-block>.default-content-wrapper p:first-child strong {
+  font-weight: 600;
+}
+
+main .section.hero-container-overlap-block>.default-content-wrapper p:first-child strong:last-child {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+main .section.hero-container-overlap-block>.default-content-wrapper h2,
+main .section.hero-container-overlap-block>.default-content-wrapper h3,
+main .section.hero-container-overlap-block>.default-content-wrapper h4,
+main .section.hero-container-overlap-block>.default-content-wrapper h5,
+main .section.hero-container-overlap-block>.default-content-wrapper h6 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #2b2826;
+}
+
 /* env-social-gov-container variation */
 main .section.env-social-gov-container.hero-container {
   margin-top: 96px;
@@ -118,10 +169,6 @@ main .section.env-social-gov-container.hero-container .default-content-wrapper h
   color: #0c1e46;
   width: 40.5%;
   margin: 0;
-}
-
-main .section.env-social-gov-container.hero-container .default-content-wrapper h2 strong {
-  color: #04844b;
 }
 
 main .section.env-social-gov-container.hero-container .default-content-wrapper p {
@@ -293,12 +340,14 @@ main .section.env-social-gov-container.hero-container .hero-wrapper .hero>div:nt
   width: 39%;
 }
 
-main .section.hero-container-overlap-block.columns-container {
+main .section.hero-container-overlap-block {
   margin: -266px 78px 0 102px;
   background-color: white;
   border-top-left-radius: 84px;
   padding: 60px;
   min-height: 266px;
+  z-index: 1;
+  position: relative;
 }
 
 main .section.hero-container-overlap-block.columns-container .columns-wrapper .columns.columns-2-cols>div>div:first-child p:nth-child(2),
@@ -338,9 +387,9 @@ main .section.hero-container-overlap-block.columns-container .columns-wrapper .c
     display: block;
   }
 
-  main .section.hero-container-overlap-block.columns-container {
+  main .section.hero-container-overlap-block {
     margin: -266px 40px 0;
-    padding: 40px;
+    padding: 60px 40px;
   }
 
   main .hero-container.hero-container-2 .hero-wrapper .hero h1 {
@@ -408,5 +457,20 @@ main .section.hero-container-overlap-block.columns-container .columns-wrapper .c
 @media (min-width: 1440px) {
   main .hero-container.hero-container-2 .hero-wrapper .hero h1 strong {
     margin-left: 389px;
+  }
+}
+
+@media (max-width: 767px) {
+  main .section.hero-container-overlap-block>.default-content-wrapper p:first-child {
+    display: block;
+  }
+
+  main .section.hero-container-overlap-block>.default-content-wrapper p:first-child strong:last-child {
+    margin: 0
+  }
+
+  main .section.hero-container-overlap-block {
+    margin: -266px 10px 0;
+    padding: 60px 10px;
   }
 }
