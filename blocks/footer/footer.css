@@ -12,6 +12,23 @@ footer .footer {
   overflow: hidden;
 }
 
+.footer-wrapper .footer.block > div > div:nth-child(1) .columns > div:nth-child(1) {
+  display:flex;
+  flex-direction:column;
+}
+
+@media (min-width: 900px) {
+  .footer-wrapper .footer.block > div > div:nth-child(1) .columns > div:nth-child(1) {
+      /* align-items: center; */
+      flex-direction: unset;
+      gap: 32px;  
+  }
+
+  .footer-wrapper .footer.block > div > div:nth-child(1) .columns > div:nth-child(1) > div {
+    flex:1;
+  }
+}
+
 .footer-wrapper .footer.block > div > div:nth-child(1) > p:first-of-type  {
   padding-left:60px;
 }
@@ -117,6 +134,7 @@ footer .footer {
   text-align:left;
   padding-left:60px;
   float:left;
+  width: 50%;
 }
 
 .footer.block > div:nth-child(1) ul:nth-last-child(2) li {

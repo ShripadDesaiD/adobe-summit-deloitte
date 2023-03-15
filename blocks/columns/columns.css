@@ -371,3 +371,9 @@ main .section.investor-resources-container.columns-container .default-content-wr
   border-bottom: 1px solid green;
   margin-top: 7.8px;
 }
+
+/* two cards columns styles */
+.section.two-cards-column.cards-container .cards-wrapper .cards.block > ul:nth-child(1) > li {
+  flex:1;
+  width:auto;
+}
