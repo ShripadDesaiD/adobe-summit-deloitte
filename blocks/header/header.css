@@ -37,7 +37,6 @@ header nav[aria-expanded="true"] {
 @media (min-width: 900px) {
   header nav {
     display: flex;
-    justify-content: space-between;
   }
 
   header nav[aria-expanded="true"] {
@@ -164,34 +163,35 @@ header nav[aria-expanded="true"] .nav-sections {
   align-self: start;
 }
 
-header nav .nav-sections ul  {
+header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
 }
 
-header nav .nav-sections ul > li {
+header nav .nav-sections ul>li {
   font-weight: 700;
 }
 
-header nav .nav-sections ul > li > ul {
+header nav .nav-sections ul>li>ul {
   margin-top: 0;
 }
 
-header nav .nav-sections ul > li > ul > li {
+header nav .nav-sections ul>li>ul>li {
   font-weight: 500;
 }
 
 @media (min-width: 900px) {
   header.header-wrapper {
-    margin-bottom:24px;
+    margin-bottom: 24px;
   }
 
   header nav .nav-sections {
     display: block;
     visibility: visible;
     white-space: nowrap;
+    margin-right: auto;
   }
 
   header nav[aria-expanded="true"] .nav-sections {
@@ -208,7 +208,7 @@ header nav .nav-sections ul > li > ul > li {
     content: '';
     display: inline-block;
     position: absolute;
-    top: .5em;
+    top: 2.5px;;
     right: 2px;
     transform: rotate(135deg);
     width: 6px;
@@ -220,12 +220,13 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .nav-drop[aria-expanded="true"]::after {
     top: unset;
-    bottom: .5em;
+    bottom: 3.5px;
     transform: rotate(315deg);
   }
 
   header nav .nav-sections ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 2em;
     margin: 0;
     font-size: var(--body-font-size-xxs);
@@ -233,30 +234,38 @@ header nav .nav-sections ul > li > ul > li {
     line-height: 1.43;
   }
 
-  header nav .nav-sections > ul > li {
+  header nav .nav-sections>ul>li {
     flex: 0 1 auto;
     position: relative;
     font-weight: 500;
   }
 
-  header nav .nav-sections > ul > li > ul {
+  header nav .nav-sections>ul>li>ul {
     display: none;
     position: relative;
   }
 
-  header nav .nav-sections > ul > li[aria-expanded="true"] > ul {
-    display: block;
-    position: absolute;
-    left: -1em;
-    width: 200px;
-    margin-top: 12px;
-    padding: 1em;
-    background-color: var(--highlight-background-color);
-    white-space: initial;
+  header nav .nav-sections>ul>li[aria-expanded="true"] {
+    color: var(--secondary-link-color);
   }
 
-  header nav .nav-sections > ul > li > ul::before {
-    content: '';
+  header nav .nav-sections>ul>li[aria-expanded="true"]>ul {
+    position: fixed;
+    width: 100vw;
+    left: -1em;
+    top: 80px;
+    white-space: initial;
+    background-color: #FAFAFA;
+    box-shadow: 1px 3px 3px rgb(0 0 0 / 20%);
+    padding: 40px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 0;
+  }
+
+  header nav .nav-sections>ul>li>ul::before {
+    /* content: ''; */
     position: absolute;
     top: -8px;
     left: 8px;
@@ -267,8 +276,19 @@ header nav .nav-sections ul > li > ul > li {
     border-bottom: 8px solid var(--highlight-background-color);
   }
 
-  header nav .nav-sections > ul > li > ul > li {
-    padding: 8px 0;
+  header nav .nav-sections>ul>li>ul>li {
+    padding: 8px 20px;
+    width: calc(33.33% - 40px);
+  }
+
+  header nav .nav-sections>ul>li:hover {
+    text-decoration: underline;
+  }
+
+  header nav .nav-sections>ul>li>ul>li:hover {
+    text-decoration: underline;
+    background-color: #f2f2f2;
+    color: var(--secondary-link-color);
   }
 }
 
@@ -278,11 +298,11 @@ header nav .nav-tools {
 }
 
 header.header-wrapper nav .nav-tools ul {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   list-style: none;
-  display:flex;
-  gap:24px;
+  display: flex;
+  gap: 24px;
   font-size: var(--body-font-size-xxs);
   color: var(--sapphire-color);
 
@@ -295,18 +315,19 @@ header.header-wrapper nav .nav-tools ul {
   }
 
   header nav[aria-expanded="false"] {
-    gap:8px;
+    gap: 8px;
   }
 }
 
 @media (max-width: 1023px) {
   header.header-wrapper .nav-wrapper {
-    width: calc(100% - 80px);
-    padding:0 40px;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
   }
 }
 
-  header.header-wrapper nav[aria-expanded="true"] .nav-tools {
+header.header-wrapper nav[aria-expanded="true"] .nav-tools {
   display: none;
 }
 
@@ -315,4 +336,3 @@ header.header-wrapper nav .nav-tools ul {
     display: block;
   }
 }
-
